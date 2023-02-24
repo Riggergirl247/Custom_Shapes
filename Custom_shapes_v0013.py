@@ -109,10 +109,15 @@ def GUI():
 if __name__=="__main__":
 	GUI()
 
+
+
+
 """ 
       Functions used in GUI starts from here 
       
                                                   """
+                                                  
+                                                  
 #========================================================================================
 #____________________________ Text Shape Chnager ________________________________________
 #========================================================================================
@@ -176,6 +181,7 @@ def main_text_shape_changer(variable):
 	# delete the duplicate controller...
 	cmds.pickWalk(d='up')
 	cmds.delete(controller_formed)
+	cmds.select(sel_list)
 
 # --------------------------------------------------------------------------
 # --------------- custom shape change --------------------------------------
@@ -211,6 +217,7 @@ def change_custom_shape(*args):
 		cmds.select(cl=True)
 		cmds.delete(item + str(i))
 		i+=1
+	cmds.select(selected_shape_list)
 		
 # ----------------------- Basic Shape Presets ------------------------------
 def Basic_shape_presets(*args):
@@ -327,4 +334,7 @@ def Basic_shape_presets(*args):
 		cmds.delete(item + str(i))
 		#pickwalk upwards since the shape node is still selected
 		cmds.pickWalk(d='up')
+	
+	# select the entire list again
+	cmds.select(selection_list)
 # --------------------------------------------------------------------------
