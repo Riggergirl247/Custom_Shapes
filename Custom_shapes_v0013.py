@@ -4,7 +4,7 @@
 # Author: Aashi Shukla
 #--------------------------------------------------------------------
 # A simple and easy to use script for replacing your already existing
-# Ctrls with a Custom made 6one. Also contains 18 shape presets and 6
+# Ctrls with a Custom made  one. Also contains 18 shape presets and 6
 # Text presets. What makes this script unique is that you get the opt
 # -ion for replacing with Text Ctrls as well. 
 #---------------------------------------------------------------------
@@ -13,7 +13,7 @@
 # import Custom_shapes_v0013
 # reload(Custom_shapes_v0013)
 # Custom_shapes_v0013.GUI()
-# and Run!
+# and Run! (Maya 2020 and all previous versions supported)
 ######################################################################
 
 import maya.cmds as cmds
